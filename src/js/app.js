@@ -1,7 +1,6 @@
-import {TimelineMax} from "gsap/all";
-import gsap from 'gsap';
+import gsap, {TimelineMax} from "gsap/all";
 
-gsap.registerPlugin(TimelineMax);
+gsap.registerPlugin();
 
 function init() {
   const tl = new TimelineMax({
