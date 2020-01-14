@@ -1,4 +1,7 @@
 import {TimelineMax} from "gsap";
+import gsap from 'gsap';
+
+gsap.registerPlugin(TimelineMax);
 
 const hamburger = document.querySelector('.menu');
 const hamburgerLines = document.querySelectorAll('.menu line');
