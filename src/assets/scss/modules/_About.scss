@@ -1,0 +1,131 @@
+.banner {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .author {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: $white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    text-align: center;
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h3 {
+      padding: 10px 0;
+      font-size: 32px;
+    }
+  }
+}
+
+.story,
+.my-work {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0px;
+
+  .story-description,
+  .work-description {
+    width: 50%;
+    
+    h3 {
+      font-size: 36px;
+      padding-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    p{
+      padding: 20px 0px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+    }
+  }
+
+  .work-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.work__carousel-container{
+  height: 266px;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+  .work-slides{
+    position: relative;
+    width: 100%;
+
+    .slide{
+      position: absolute;
+      top: 0;
+    
+      &:nth-child(1){
+        left: 0;
+      }
+      &:nth-child(2){
+        left: 30%;
+      }
+      &:nth-child(3){
+        left: 60%;
+      }
+      &:nth-child(4){
+        left: 90%;
+      }
+      &:nth-child(5){
+        left: 120%;
+      }
+      &:nth-child(6){
+        left: 150%;
+      }
+    }
+  }
+
+  .btn-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    
+    .btn{
+      height: 50px;
+      width: 50px;
+      border: none;
+      background: none;
+      transition: .5s all linear; 
+      img{
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
+#prev{
+  transform: rotate(90deg);
+}
+#next{
+  transform: rotate(-90deg);
+}

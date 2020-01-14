@@ -1,0 +1,30 @@
+//Fonts
+@font-face{
+  font-family: 'PopLight';
+  src: url(/assets/fonts/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'PopRegular';
+  src: url(/assets/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'PopMedium';
+  src: url(/assets/fonts/Poppins-Medium.ttf) format('truetype');
+}
+// Variables
+
+//Fonts
+$fontLight: 'PopLight';
+$fontRegular: 'PopRegular';
+$fontMedium: 'PopMedium';
+
+//Sizes 
+$desktopWidth: 1258px;
+$tabletWidth: 768px;
+
+//Colors
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
+$darkBlueGradient: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
