@@ -1,5 +1,4 @@
-import { TimelineMax } from "gsap/all";
-
+import {TimelineMax} from "gsap/all";
 
 function init() {
   const tl = new TimelineMax({

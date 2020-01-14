@@ -1,4 +1,5 @@
-import { TimelineMax } from 'gsap';
+import {TimelineMax} from "gsap";
+
 const hamburger = document.querySelector('.menu');
 const hamburgerLines = document.querySelectorAll('.menu line');
 const navOpen = document.querySelector('.nav-open');
